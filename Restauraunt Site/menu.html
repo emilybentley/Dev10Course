@@ -6,25 +6,40 @@
 
   <title>Menu</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
   <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
 
   <style>
 
   th {
-    font-size: 2em;
+    font-size: 1.5em;
+    padding: 5px;
   }
 
-  table {
+  table{width: 100%;
+    margin: auto;
     background-color:#d6a184;
+  }
+
+  td{
+    padding: 15px;
+  }
+
+  #beverages{
+    width: 70%;
+  }
+
+  #beverages tr:nth-child(odd){
+    background-color: #fec196;
   }
 
   </style>
 
 </head>
 
+
 <body>
-  <header><h1>Ricos</h1></header>
+  <header><h1 id="restaurantName">Ricos</h1></header>
 
   <nav>
     <hr/>
@@ -35,7 +50,7 @@
     <hr/>
   </nav>
 
-<table width="90%"">
+<table>
   <tr>
     <th>Cheese Plate</th>
     <th>Artichoke Dip</th>
@@ -43,36 +58,67 @@
   </tr>
 
   <tr>
-    <td rowspan="5">A delicious platter consisting of Gouda, Brie, Camembert,
+    <td>A delicious platter consisting of Gouda, Brie, Camembert,
       Havarti, Cheddar, and Swiss. Our cheeses are imported from Europe
       every week and are served fresh. 12.95</td>
-    <td rowspani="5">Our renowned artichoke dip is known for its perfect
-      consistency and rich flavors 8.99.</td>
-    <td rowspan="5">This seafood platter is the perfect option for large parties
-        to share. The seafood is imported from the coast of Maine and is always
-        fresh.18.95</td>
+    <td>Our renowned artichoke dip is known for its perfect
+      consistency and rich flavors. Served with a variety of breads
+      and crackers. 8.99</td>
+    <td>This seafood platter is the perfect option for large parties.
+        The seafood is imported from the coast of Maine and is always
+        fresh. Includes shrimp, crab, salmon, and lobster. 18.95</td>
     </tr>
-  </table>
 
-  <table width="90%"">
     <tr>
       <th>Filet Mignon</th>
-      <th>Mexian Platter</th>
+      <th>Mexican Platter</th>
       <th>Broccoli and Salmon</th>
     </tr>
 
     <tr>
-      <td rowspan="5">A delicious platter consisting of Gouda, Brie, Camembert,
-        Havarti, Cheddar, and Swiss. Our cheeses are imported from Europe
-        every week and are served fresh. 12.95</td>
-      <td rowspani="5">Our renowned artichoke dip is known for its perfect
-        consistency and rich flavors 8.99.</td>
-      <td rowspan="5">This seafood platter is the perfect option for large parties
-          to share. The seafood is imported from the coast of Maine and is always
-          fresh.18.95</td>
-      </tr>
+      <td>Our premium meat is our popular selection. Numerous choices for
+        seasoning and toppings make this
+        dish the perfect option for anyone. Served with a baked potato. 25.99</td>
+      <td>Our Mexican platter is full of rich flavors and
+        beautiful colors. Includes your choice of tacos or enchiladas,
+        with rice and beans. 16.99</td>
+      <td>A light and healthy option is found in our broccoli and
+      salmon platter. Steamed broccoli, perfectly buttered and seasoned, is
+      the perfect pairing with our fresh salmon. 21.90</td>
+    </tr>
+
     </table>
     <br/>
+
+
+
+    <table id="beverages">
+      <tr>
+        <th colspan="2">Beverages</th>
+      </tr>
+
+      <tr>
+        <td>Strawberry Lemonade</td>
+        <td>$4.00</td>
+      </tr>
+
+      <tr>
+        <td>Coke Products</td>
+        <td>$3.50</td>
+      </tr>
+
+      <tr>
+        <td>Sweet Tea</td>
+        <td>$3.00</td>
+      </tr>
+
+      <tr>
+        <td>Sparkling Water</td>
+        <td>$2.00</td>
+      </tr>
+
+    </table>
+  </br>
 
 
   <footer>

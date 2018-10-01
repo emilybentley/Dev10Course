@@ -6,9 +6,11 @@ header, footer{
   padding: 10px 10px 60px 10px;
 }
 
-h1{
-  font-size: 3.5em;
+#restaurantName{
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5em
 }
+
 
 body{
   background-color: #fef9ff;
