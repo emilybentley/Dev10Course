@@ -1,0 +1,45 @@
+header, footer{
+  background-color: #63474d;
+  color: #fec196;
+  height: 80px;
+  text-align: center;
+  padding: 10px 10px 60px 10px;
+}
+
+h1{
+  font-size: 3.5em;
+}
+
+body{
+  background-color: #fef9ff;
+  color: #0d1f2d;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+nav a{
+  background-color: #63474d;
+  color: #fec196;
+  padding: 8px;
+  text-align: center;
+  display: block;
+  margin: 20px;
+  width: 240px;
+  float: left;
+}
+
+.clear-float{
+  clear:both;
+}
+
+nav a:visited{
+  color: #aa767c;
+}
+
+nav a:hover{
+  font-weight: bold;
+}
+
+nav a:active{
+  text-decoration: none;
+}

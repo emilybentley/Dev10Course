@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+<head>
+  <title>Home Page</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+  <style>
+
+  textarea{
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    border: 2px solid #0d1f2d;
+    border-radius: 3px;
+  }
+
+  .required{
+    font-weight: bold;
+  }
+
+  input[type=text]{
+  border: 2px solid #0d1f2d;
+  width: 50%;
+  padding: 8px 8px;
+  margin: 12px 0;
+  box-sizing: border-box;
+}
+
+input[type=submit]{
+  background-color: #63474d;
+  color: #fec196;
+  padding: 4px 8px;
+  margin: 5px 5px 10px;
+  font-size: 1.2em;
+}
+
+input[type=radio]{
+  padding: 4px 8px;
+  margin: 5px 5px 10px;
+  font-size: 1.2em;
+}
+
+input[type=checkbox]{
+  padding: 4px 8px;
+  margin: 5px 5px 10px;
+  font-size: 1.2em;
+}
+
+
+
+  </style>
+
+</head>
+
+<body>
+  <header><h1>Ricos</h1></header>
+
+  <nav>
+    <hr/>
+    <p><a href="home.html">Home</a></p>
+    <p><a href="menu.html">Menu</a></p>
+    <p><a href="contact.html">Contact Us</a></p>
+    <div class="clear-float"></div>
+    <hr/>
+  </nav>
+
+<form action="submit.html" method="POST">
+  <label for="name" class="required">Name:</label>
+  <input type="text" id="name" name="name"><br/>
+
+  <label for="email" class="required">Email:</label>
+  <input type="text" id="email" name="email"><br/>
+
+  <label for="phone" class="required">Phone:</label>
+  <input type="text" id="phone" name="phone"><br/>
+
+  <br/><label for="inquiryreason" class="required">Reason For Inquiry:</label>
+  <select id="inquiryreason" name="inquiryreason">
+    <option value="catering" selected>Catering</option>
+    <option value="privateparty">Private Party</option>
+    <option value="feedback">Feedback</option>
+    <option value="other">Other</option>
+  </select><br/>
+
+  <br/><label for="info" class="required">Additional Information:</label>
+  <br/>
+  <textarea id="info" name="info"></textarea><br/>
+
+  <br/><legend class="required">Have you been to the restaurant?</legend>
+  <input type="radio" id="choice1" name="beentorestaurant" value="no">
+  <label for="choice1">No</label>
+  <input type="radio" id="choice2" name="beentorestaurant" value="yes">
+  <label for="choice2">Yes</label><br/>
+
+  <br/><legend class="required">Best Days to Contact You:</legend>
+  <input type="checkbox" id="monday" name="contact_preference" value="monday">
+  <label for="monday">M</label>
+  <input type="checkbox" id="tuesday" name="contact_preference" value="tuesday">
+  <label for="tuesday">T</label>
+  <input type="checkbox" id="wednesday" name="contact_preference" value="wednesday">
+  <label for="wednesday">W</label>
+  <input type="checkbox" id="thursday" name="contact_preference" value="thursday">
+  <label for="thursday">Th</label>
+  <input type="checkbox" id="friday" name="contact_preference" value="friday">
+  <label for="friday">F</label><br/>
+
+  <br/><input type="submit" name="submit" value="Send Request">
+
+
+
+
+
+  <footer>
+    <p>123 Zarrow Street, Seattle, WA, 54321</p>
+    <p>111-222-3344</p>
+  </footer>
+
+</body>
+</html>
